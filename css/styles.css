@@ -1,0 +1,80 @@
+:root {
+    --blanco: #ffffff;
+    --negro: #000000;
+    --azulgris: #7890a8;
+    --azulclaro: #304878;
+    --azuloscuro: #181848;
+    --amarillo: #f0a818;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    /* 1rem = 10px*/
+    font-family: 'Inter', sans-serif;
+}
+
+.nombre {
+    text-align: center;
+    color: var(--amarillo);
+    font-size: 3.8rem;
+
+}
+
+.nombre span {
+    font-size: 3rem;
+    color: var(--negro);
+}
+
+/*Navegacion*/
+.nav-bg {
+    background-color: var(--azulclaro);
+
+}
+
+.nav-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-principal a {
+    display: block;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem;
+
+}
+
+.nav-principal a:hover {
+    background-color: var(--amarillo);
+    color: var(--negro);
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 480px) {}
+
+@media (min-width: 768px) {
+    .nav-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1280px) {}
+
+.hero {
+    background-image: url(../imgs/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
